@@ -1,6 +1,6 @@
 # john-lewis
 
-Due to the time constraints (less than 24h notice):
+Due to the time constraints (less than 24h notice and spending around 3 hours working on the project):
 - Only Grid View Controller has been completed
 - Only display the first 20 elements. It doesn't make multiple calls to get all the data when scrolling is necessary
 - Grid View Controller is strongly attached to the search. In order to be more reusable, I would inject the function I need to call instead of the network object. In this way, the view could be reuse for different purposes.
