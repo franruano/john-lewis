@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1724068EFDB3478F1D3D8EC0 /* Pods_JohnLewis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176798ADEB828DA958FE4A27 /* Pods_JohnLewis.framework */; };
 		A604F4001E5EDCFB00FA33C2 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A604F3FF1E5EDCFB00FA33C2 /* ProductCell.swift */; };
 		A604F4021E5EDE3100FA33C2 /* ProductCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A604F4011E5EDE3100FA33C2 /* ProductCellTests.swift */; };
 		A689C6F21E5E37460006FC72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C6F11E5E37460006FC72 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		A689C7271E5E54670006FC72 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7261E5E54670006FC72 /* NetworkProtocol.swift */; };
 		A689C72B1E5E63400006FC72 /* ProductGridDatasourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C72A1E5E63400006FC72 /* ProductGridDatasourceTests.swift */; };
 		A689C72E1E5E644C0006FC72 /* ProductGridDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C72D1E5E644C0006FC72 /* ProductGridDataSource.swift */; };
+		AE2CFBEE25569B4430BB6E15 /* Pods_JohnLewisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7522581C03912649B460CA55 /* Pods_JohnLewisTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E9E781565C8FB572A83A51 /* Pods-JohnLewisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohnLewisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JohnLewisTests/Pods-JohnLewisTests.release.xcconfig"; sourceTree = "<group>"; };
+		1579594D0378DF811FC26312 /* Pods-JohnLewis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohnLewis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JohnLewis/Pods-JohnLewis.debug.xcconfig"; sourceTree = "<group>"; };
+		176798ADEB828DA958FE4A27 /* Pods_JohnLewis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohnLewis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2313649B9351F979E0121F /* Pods-JohnLewisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohnLewisTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JohnLewisTests/Pods-JohnLewisTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5925F79E40B456C875965559 /* Pods-JohnLewis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohnLewis.release.xcconfig"; path = "Pods/Target Support Files/Pods-JohnLewis/Pods-JohnLewis.release.xcconfig"; sourceTree = "<group>"; };
+		7522581C03912649B460CA55 /* Pods_JohnLewisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohnLewisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A604F3FF1E5EDCFB00FA33C2 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		A604F4011E5EDE3100FA33C2 /* ProductCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCellTests.swift; sourceTree = "<group>"; };
 		A689C6EE1E5E37460006FC72 /* JohnLewis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JohnLewis.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1724068EFDB3478F1D3D8EC0 /* Pods_JohnLewis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +84,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2CFBEE25569B4430BB6E15 /* Pods_JohnLewisTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05B02A87F62DCB2EFE838EAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				176798ADEB828DA958FE4A27 /* Pods_JohnLewis.framework */,
+				7522581C03912649B460CA55 /* Pods_JohnLewisTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47752D6CA5A5FBCE6A026D09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1579594D0378DF811FC26312 /* Pods-JohnLewis.debug.xcconfig */,
+				5925F79E40B456C875965559 /* Pods-JohnLewis.release.xcconfig */,
+				1A2313649B9351F979E0121F /* Pods-JohnLewisTests.debug.xcconfig */,
+				03E9E781565C8FB572A83A51 /* Pods-JohnLewisTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A604F3FE1E5EDCD900FA33C2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +125,8 @@
 				A689C6F01E5E37460006FC72 /* JohnLewis */,
 				A689C7051E5E37460006FC72 /* JohnLewisTests */,
 				A689C6EF1E5E37460006FC72 /* Products */,
+				47752D6CA5A5FBCE6A026D09 /* Pods */,
+				05B02A87F62DCB2EFE838EAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A689C70B1E5E37460006FC72 /* Build configuration list for PBXNativeTarget "JohnLewis" */;
 			buildPhases = (
+				8B246DCBA6F9FADF2A1463CB /* [CP] Check Pods Manifest.lock */,
 				A689C6EA1E5E37450006FC72 /* Sources */,
 				A689C6EB1E5E37450006FC72 /* Frameworks */,
 				A689C6EC1E5E37450006FC72 /* Resources */,
+				7CA4B0F5B7CE3536E807B95D /* [CP] Embed Pods Frameworks */,
+				897003EC83742EF156313529 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A689C70E1E5E37460006FC72 /* Build configuration list for PBXNativeTarget "JohnLewisTests" */;
 			buildPhases = (
+				820CD0632B4E7CE3A0283895 /* [CP] Check Pods Manifest.lock */,
 				A689C6FE1E5E37460006FC72 /* Sources */,
 				A689C6FF1E5E37460006FC72 /* Frameworks */,
 				A689C7001E5E37460006FC72 /* Resources */,
+				B447C4EDABDD03530237F68A /* [CP] Embed Pods Frameworks */,
+				9824C41BF1E33BF3A6BD244B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,6 +328,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CA4B0F5B7CE3536E807B95D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JohnLewis/Pods-JohnLewis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		820CD0632B4E7CE3A0283895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		897003EC83742EF156313529 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JohnLewis/Pods-JohnLewis-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B246DCBA6F9FADF2A1463CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9824C41BF1E33BF3A6BD244B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JohnLewisTests/Pods-JohnLewisTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B447C4EDABDD03530237F68A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JohnLewisTests/Pods-JohnLewisTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A689C6EA1E5E37450006FC72 /* Sources */ = {
@@ -443,6 +574,7 @@
 		};
 		A689C70C1E5E37460006FC72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1579594D0378DF811FC26312 /* Pods-JohnLewis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VN2H69JCKK;
@@ -457,6 +589,7 @@
 		};
 		A689C70D1E5E37460006FC72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5925F79E40B456C875965559 /* Pods-JohnLewis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VN2H69JCKK;
@@ -471,6 +604,7 @@
 		};
 		A689C70F1E5E37460006FC72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2313649B9351F979E0121F /* Pods-JohnLewisTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +620,7 @@
 		};
 		A689C7101E5E37460006FC72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E9E781565C8FB572A83A51 /* Pods-JohnLewisTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

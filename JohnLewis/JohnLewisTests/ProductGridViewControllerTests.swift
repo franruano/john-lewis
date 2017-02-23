@@ -34,7 +34,7 @@ class ProductGridViewControllerTests: XCTestCase {
         vc?.network = network
         XCTAssertNotNil(vc?.network, "ProductGridViewController.network should NOT be nil")
         XCTAssertNotNil(vc?.productContainer, "ProductGridViewController.network should NOT be nil")
-        XCTAssertEqual(vc?.title, "dishwasher(\(vc?.productContainer?.results))", "Controller title doesn't match")
+        XCTAssertEqual(vc?.title, "dishwasher(\(vc?.productContainer?.results ?? 0))", "Controller title doesn't match")
     }
 
 }
