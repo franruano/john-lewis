@@ -2,11 +2,12 @@
 //  ProductGridDatasourceTests.swift
 //  JohnLewis
 //
-//  Created by Fran Abucillo on 23/2/17.
+//  Created by Fran Ruano on 23/2/17.
 //  Copyright © 2017 Fran Ruano. All rights reserved.
 //
 
 import XCTest
+@testable import JohnLewis
 
 class ProductGridDatasourceTests: XCTestCase {
     
@@ -20,9 +21,11 @@ class ProductGridDatasourceTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testProductGridDatasourceInitWithDefault() {
+        let productGridDataSource = ProductGridDataSource()
+        XCTAssertNotNil(productGridDataSource.products, "Product should NOT be nil")
+        XCTAssertEqual(productGridDataSource.products?.count, 0, "Wrong product size")
+        
     }
     
 }

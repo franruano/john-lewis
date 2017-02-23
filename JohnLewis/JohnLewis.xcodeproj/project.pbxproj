@@ -23,6 +23,7 @@
 		A689C7241E5E51390006FC72 /* ProductGridViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7231E5E51390006FC72 /* ProductGridViewControllerTests.swift */; };
 		A689C7271E5E54670006FC72 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7261E5E54670006FC72 /* NetworkProtocol.swift */; };
 		A689C72B1E5E63400006FC72 /* ProductGridDatasourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C72A1E5E63400006FC72 /* ProductGridDatasourceTests.swift */; };
+		A689C72E1E5E644C0006FC72 /* ProductGridDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C72D1E5E644C0006FC72 /* ProductGridDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A689C7231E5E51390006FC72 /* ProductGridViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGridViewControllerTests.swift; sourceTree = "<group>"; };
 		A689C7261E5E54670006FC72 /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		A689C72A1E5E63400006FC72 /* ProductGridDatasourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGridDatasourceTests.swift; sourceTree = "<group>"; };
+		A689C72D1E5E644C0006FC72 /* ProductGridDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGridDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +161,18 @@
 		A689C7291E5E557B0006FC72 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A689C72C1E5E64330006FC72 /* DataManager */,
 				A689C6F31E5E37460006FC72 /* ProductGridViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A689C72C1E5E64330006FC72 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A689C72D1E5E644C0006FC72 /* ProductGridDataSource.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 			files = (
 				A689C71F1E5E4BDA0006FC72 /* Network.swift in Sources */,
 				A689C7161E5E3ED40006FC72 /* ProductSimple.swift in Sources */,
+				A689C72E1E5E644C0006FC72 /* ProductGridDataSource.swift in Sources */,
 				A689C7271E5E54670006FC72 /* NetworkProtocol.swift in Sources */,
 				A689C71C1E5E48640006FC72 /* ProductSimpleContainer.swift in Sources */,
 				A689C6F41E5E37460006FC72 /* ProductGridViewController.swift in Sources */,
