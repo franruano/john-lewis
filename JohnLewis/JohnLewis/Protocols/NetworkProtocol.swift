@@ -7,8 +7,10 @@
 //  Copyright © 2017 Fran Ruano. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol NetworkProtocol {
-    func getSimpleProducts(completion: (Result<ProductSimpleContainer>) -> Void)
+    func getSimpleProducts(searchString: String, pageSize: String, completion: @escaping (Result<ProductSimpleContainer>) -> Void)
+    
+     func getImage(path: String?, imageView: UIImageView)
 }

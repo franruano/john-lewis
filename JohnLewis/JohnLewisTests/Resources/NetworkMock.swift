@@ -6,11 +6,11 @@
 //  Copyright © 2017 Fran Ruano. All rights reserved.
 //
 
-import Foundation
+import UIKit
 @testable import JohnLewis
 
 class NetworkMock: NetworkProtocol {
-    func getSimpleProducts(completion: (Result<ProductSimpleContainer>) -> Void) {
+    func getSimpleProducts(searchString: String, pageSize: String, completion: @escaping (Result<ProductSimpleContainer>) -> Void)  {
         do {
             let bundle = Bundle(for: type(of: self))
             if let file = bundle.url(forResource: "ProductSimple", withExtension: "json") {
@@ -31,4 +31,6 @@ class NetworkMock: NetworkProtocol {
             return completion(.failure(NetworkError.unknown))
         }
     }
+    
+    func getImage(path: String? , imageView: UIImageView) { }
 }

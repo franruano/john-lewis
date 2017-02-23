@@ -13,7 +13,11 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet weak var imgProduct: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     
+    var network: NetworkProtocol?
+    
     func setData(product: ProductSimple?) {
         lblTitle.text = product?.title ?? ""
+        
+        network?.getImage(path: product?.imgUrlString, imageView: imgProduct)
     }
 }

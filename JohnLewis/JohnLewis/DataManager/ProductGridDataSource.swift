@@ -11,17 +11,16 @@ import UIKit
 class ProductGridDataSource: NSObject {
     
     let reuseIdentifier = "ProductCell"
+    let padding: CGFloat = 10
+    
     var products: [ProductSimple]?
+    var network: NetworkProtocol?
+    
     
     init(products: [ProductSimple]? = [ProductSimple]()) {
         self.products = products
     }
     
-    
-    //Network
-    
-    //Keys hardcoded
-    //Url elements
 }
 
 extension ProductGridDataSource: UICollectionViewDataSource {
@@ -38,8 +37,9 @@ extension ProductGridDataSource: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ProductCell else {
             fatalError("Cell \(reuseIdentifier) couln't be dequeue")
         }
+        cell.network = network
         cell.setData(product: products?[indexPath.row])
-        
+
         return cell
     }
 }
@@ -52,7 +52,7 @@ extension ProductGridDataSource: UICollectionViewDelegateFlowLayout {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         
-        return CGSize(width: (screenWidth/3) - 10, height: screenWidth/3)
+        return CGSize(width: (screenWidth/3) - padding, height: screenWidth/3)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

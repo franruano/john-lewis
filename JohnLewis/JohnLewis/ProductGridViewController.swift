@@ -10,9 +10,10 @@ import UIKit
 
 class ProductGridViewController: UIViewController {
 
+    var searchString: String = "Dishwasher"
     var network: NetworkProtocol? {
         didSet {
-            network?.getSimpleProducts(completion: {[weak self] (result: Result<ProductSimpleContainer>?) in
+            network?.getSimpleProducts(searchString: searchString, pageSize: "20", completion: {[weak self] (result: Result<ProductSimpleContainer>?) in
                 switch result {
                 case .success(let products)?:
                     self?.productContainer = products
@@ -27,8 +28,9 @@ class ProductGridViewController: UIViewController {
     }
     var productContainer: ProductSimpleContainer? {
         didSet {
-            self.title = "dishwasher(\(productContainer?.results ?? 0))"
+            self.title = "\(searchString) (\(productContainer?.results ?? 0))"
             dataSource = ProductGridDataSource(products: productContainer?.products)
+            dataSource?.network = network
             if collectionView != nil {
                 collectionView.dataSource = dataSource
             }
