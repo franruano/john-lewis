@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A689C6F21E5E37460006FC72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C6F11E5E37460006FC72 /* AppDelegate.swift */; };
-		A689C6F41E5E37460006FC72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C6F31E5E37460006FC72 /* ViewController.swift */; };
+		A689C6F41E5E37460006FC72 /* ProductGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C6F31E5E37460006FC72 /* ProductGridViewController.swift */; };
 		A689C6F71E5E37460006FC72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A689C6F51E5E37460006FC72 /* Main.storyboard */; };
 		A689C6F91E5E37460006FC72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A689C6F81E5E37460006FC72 /* Assets.xcassets */; };
 		A689C6FC1E5E37460006FC72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A689C6FA1E5E37460006FC72 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,11 @@
 		A689C7161E5E3ED40006FC72 /* ProductSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7151E5E3ED40006FC72 /* ProductSimple.swift */; };
 		A689C7181E5E42CD0006FC72 /* ProductSimpleContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7171E5E42CD0006FC72 /* ProductSimpleContainerTests.swift */; };
 		A689C71C1E5E48640006FC72 /* ProductSimpleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C71B1E5E48640006FC72 /* ProductSimpleContainer.swift */; };
+		A689C71F1E5E4BDA0006FC72 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C71E1E5E4BDA0006FC72 /* Network.swift */; };
+		A689C7201E5E4C5E0006FC72 /* ProductSimple.json in Resources */ = {isa = PBXBuildFile; fileRef = A689C7131E5E3AF90006FC72 /* ProductSimple.json */; };
+		A689C7221E5E506E0006FC72 /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7211E5E506E0006FC72 /* NetworkMock.swift */; };
+		A689C7241E5E51390006FC72 /* ProductGridViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7231E5E51390006FC72 /* ProductGridViewControllerTests.swift */; };
+		A689C7271E5E54670006FC72 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7261E5E54670006FC72 /* NetworkProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,7 @@
 /* Begin PBXFileReference section */
 		A689C6EE1E5E37460006FC72 /* JohnLewis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JohnLewis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A689C6F11E5E37460006FC72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A689C6F31E5E37460006FC72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A689C6F31E5E37460006FC72 /* ProductGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridViewController.swift; sourceTree = "<group>"; };
 		A689C6F61E5E37460006FC72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A689C6F81E5E37460006FC72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A689C6FB1E5E37460006FC72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +49,10 @@
 		A689C7151E5E3ED40006FC72 /* ProductSimple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSimple.swift; sourceTree = "<group>"; };
 		A689C7171E5E42CD0006FC72 /* ProductSimpleContainerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSimpleContainerTests.swift; sourceTree = "<group>"; };
 		A689C71B1E5E48640006FC72 /* ProductSimpleContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSimpleContainer.swift; sourceTree = "<group>"; };
+		A689C71E1E5E4BDA0006FC72 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A689C7211E5E506E0006FC72 /* NetworkMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
+		A689C7231E5E51390006FC72 /* ProductGridViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGridViewControllerTests.swift; sourceTree = "<group>"; };
+		A689C7261E5E54670006FC72 /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +94,11 @@
 		A689C6F01E5E37460006FC72 /* JohnLewis */ = {
 			isa = PBXGroup;
 			children = (
+				A689C7291E5E557B0006FC72 /* Controllers */,
+				A689C7251E5E53FF0006FC72 /* Protocols */,
+				A689C71D1E5E4BC50006FC72 /* Network */,
 				A689C7111E5E37980006FC72 /* Models */,
 				A689C6F11E5E37460006FC72 /* AppDelegate.swift */,
-				A689C6F31E5E37460006FC72 /* ViewController.swift */,
 				A689C6F51E5E37460006FC72 /* Main.storyboard */,
 				A689C6F81E5E37460006FC72 /* Assets.xcassets */,
 				A689C6FA1E5E37460006FC72 /* LaunchScreen.storyboard */,
@@ -103,6 +114,7 @@
 				A689C7061E5E37460006FC72 /* ProductSimpleTests.swift */,
 				A689C7171E5E42CD0006FC72 /* ProductSimpleContainerTests.swift */,
 				A689C7081E5E37460006FC72 /* Info.plist */,
+				A689C7231E5E51390006FC72 /* ProductGridViewControllerTests.swift */,
 			);
 			path = JohnLewisTests;
 			sourceTree = "<group>";
@@ -119,9 +131,34 @@
 		A689C7121E5E3ACE0006FC72 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A689C7211E5E506E0006FC72 /* NetworkMock.swift */,
 				A689C7131E5E3AF90006FC72 /* ProductSimple.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A689C71D1E5E4BC50006FC72 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A689C71E1E5E4BDA0006FC72 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A689C7251E5E53FF0006FC72 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A689C7261E5E54670006FC72 /* NetworkProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A689C7291E5E557B0006FC72 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A689C6F31E5E37460006FC72 /* ProductGridViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A689C6FC1E5E37460006FC72 /* LaunchScreen.storyboard in Resources */,
+				A689C7201E5E4C5E0006FC72 /* ProductSimple.json in Resources */,
 				A689C6F91E5E37460006FC72 /* Assets.xcassets in Resources */,
 				A689C6F71E5E37460006FC72 /* Main.storyboard in Resources */,
 			);
@@ -230,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A689C71F1E5E4BDA0006FC72 /* Network.swift in Sources */,
 				A689C7161E5E3ED40006FC72 /* ProductSimple.swift in Sources */,
+				A689C7271E5E54670006FC72 /* NetworkProtocol.swift in Sources */,
 				A689C71C1E5E48640006FC72 /* ProductSimpleContainer.swift in Sources */,
-				A689C6F41E5E37460006FC72 /* ViewController.swift in Sources */,
+				A689C6F41E5E37460006FC72 /* ProductGridViewController.swift in Sources */,
 				A689C6F21E5E37460006FC72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A689C7241E5E51390006FC72 /* ProductGridViewControllerTests.swift in Sources */,
 				A689C7071E5E37460006FC72 /* ProductSimpleTests.swift in Sources */,
 				A689C7181E5E42CD0006FC72 /* ProductSimpleContainerTests.swift in Sources */,
+				A689C7221E5E506E0006FC72 /* NetworkMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
