@@ -17,9 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let network = Network()
-        if let productGridViewController = window?.rootViewController as? ProductGridViewController {
+        if let nc = window?.rootViewController as? UINavigationController,
+            let productGridViewController = nc.viewControllers[0] as? ProductGridViewController {
+            
             productGridViewController.network = network
         }
+        
         return true
     }
 

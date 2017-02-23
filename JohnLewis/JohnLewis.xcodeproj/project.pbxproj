@@ -22,6 +22,7 @@
 		A689C7221E5E506E0006FC72 /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7211E5E506E0006FC72 /* NetworkMock.swift */; };
 		A689C7241E5E51390006FC72 /* ProductGridViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7231E5E51390006FC72 /* ProductGridViewControllerTests.swift */; };
 		A689C7271E5E54670006FC72 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C7261E5E54670006FC72 /* NetworkProtocol.swift */; };
+		A689C72B1E5E63400006FC72 /* ProductGridDatasourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C72A1E5E63400006FC72 /* ProductGridDatasourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A689C7211E5E506E0006FC72 /* NetworkMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
 		A689C7231E5E51390006FC72 /* ProductGridViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGridViewControllerTests.swift; sourceTree = "<group>"; };
 		A689C7261E5E54670006FC72 /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		A689C72A1E5E63400006FC72 /* ProductGridDatasourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGridDatasourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				A689C7171E5E42CD0006FC72 /* ProductSimpleContainerTests.swift */,
 				A689C7081E5E37460006FC72 /* Info.plist */,
 				A689C7231E5E51390006FC72 /* ProductGridViewControllerTests.swift */,
+				A689C72A1E5E63400006FC72 /* ProductGridDatasourceTests.swift */,
 			);
 			path = JohnLewisTests;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A689C72B1E5E63400006FC72 /* ProductGridDatasourceTests.swift in Sources */,
 				A689C7241E5E51390006FC72 /* ProductGridViewControllerTests.swift in Sources */,
 				A689C7071E5E37460006FC72 /* ProductSimpleTests.swift in Sources */,
 				A689C7181E5E42CD0006FC72 /* ProductSimpleContainerTests.swift in Sources */,

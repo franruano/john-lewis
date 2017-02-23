@@ -25,7 +25,11 @@ class ProductGridViewController: UIViewController {
             })
         }
     }
-    var productContainer: ProductSimpleContainer?
+    var productContainer: ProductSimpleContainer? {
+        didSet {
+            self.title = "dishwasher(\(productContainer?.results))"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
