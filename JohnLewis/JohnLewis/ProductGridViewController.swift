@@ -27,15 +27,15 @@ class ProductGridViewController: UIViewController {
     }
     var productContainer: ProductSimpleContainer? {
         didSet {
-            self.title = "dishwasher(\(productContainer?.results))"
+            self.title = "dishwasher(\(productContainer?.results ?? 0))"
             dataSource = ProductGridDataSource(products: productContainer?.products)
-//            if collectionView != nil {
-//                collectionView.dataSource = dataSource
-//            }
+            if collectionView != nil {
+                collectionView.dataSource = dataSource
+            }
         }
     }
     var dataSource: ProductGridDataSource?
-    
+
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -49,9 +49,10 @@ class ProductGridViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        if let dataSource = dataSource {
-//            collectionView.dataSource = dataSource
-//        }
+        if let dataSource = dataSource {
+            collectionView.dataSource = dataSource
+        }
+        collectionView.delegate = dataSource
     }
 
 

@@ -18,14 +18,10 @@ class ProductGridDataSource: NSObject {
     }
     
     
-    //Pasar a la UI
     //Network
-    //Cell builder
     
     //Keys hardcoded
     //Url elements
-    //Cell layout?
-    //Cell build itself and not using a builder
 }
 
 extension ProductGridDataSource: UICollectionViewDataSource {
@@ -39,10 +35,28 @@ extension ProductGridDataSource: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-//        cell.backgroundColor = .red
-
-//            return cell
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ProductCell else {
+            fatalError("Cell \(reuseIdentifier) couln't be dequeue")
+        }
+        cell.setData(product: products?[indexPath.row])
+        
+        return cell
     }
 }
+
+// MARK: - UICollectionViewFlowLayout
+
+extension ProductGridDataSource: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        
+        return CGSize(width: (screenWidth/3) - 10, height: screenWidth/3)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(0, 0, 0, 0)
+    }
+}
+

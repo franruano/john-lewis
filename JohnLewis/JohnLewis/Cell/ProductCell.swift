@@ -13,7 +13,7 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet weak var imgProduct: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     
-    func setData(product: ProductSimple) {
-        lblTitle.text = product.title
+    func setData(product: ProductSimple?) {
+        lblTitle.text = product?.title ?? ""
     }
 }
