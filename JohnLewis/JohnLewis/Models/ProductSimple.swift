@@ -15,6 +15,7 @@ struct ProductSimple {
     let imgUrlString: String
     
     init(json: [String: Any]) {
+        
         productId = json["productId"] as? String ?? ""
         currentPrice = (json["price"] as? [String: Any])?["now"] as? String ?? ""
         title = json["title"] as? String ?? ""

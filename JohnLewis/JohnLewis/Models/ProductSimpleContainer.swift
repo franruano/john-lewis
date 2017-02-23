@@ -14,6 +14,7 @@ struct ProductSimpleContainer {
     let results: Int
     
     init(json: [String: Any]) {
+        
         pageAvailable = json["pagesAvailable"] as? Int ?? 0
         results = json["results"] as? Int ?? 0
         var products = [ProductSimple]()
