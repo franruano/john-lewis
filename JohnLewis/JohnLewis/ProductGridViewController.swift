@@ -28,14 +28,30 @@ class ProductGridViewController: UIViewController {
     var productContainer: ProductSimpleContainer? {
         didSet {
             self.title = "dishwasher(\(productContainer?.results))"
+            dataSource = ProductGridDataSource(products: productContainer?.products)
+//            if collectionView != nil {
+//                collectionView.dataSource = dataSource
+//            }
         }
     }
+    var dataSource: ProductGridDataSource?
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        if let dataSource = dataSource {
+//            collectionView.dataSource = dataSource
+//        }
     }
 
 

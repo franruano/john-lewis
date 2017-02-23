@@ -10,7 +10,7 @@ import UIKit
 
 class ProductGridDataSource: NSObject {
     
-    let reuseIdentifier = "cell"
+    let reuseIdentifier = "ProductCell"
     var products: [ProductSimple]?
     
     init(products: [ProductSimple]? = [ProductSimple]()) {
@@ -25,6 +25,7 @@ class ProductGridDataSource: NSObject {
     //Keys hardcoded
     //Url elements
     //Cell layout?
+    //Cell build itself and not using a builder
 }
 
 extension ProductGridDataSource: UICollectionViewDataSource {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A604F4001E5EDCFB00FA33C2 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A604F3FF1E5EDCFB00FA33C2 /* ProductCell.swift */; };
+		A604F4021E5EDE3100FA33C2 /* ProductCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A604F4011E5EDE3100FA33C2 /* ProductCellTests.swift */; };
 		A689C6F21E5E37460006FC72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C6F11E5E37460006FC72 /* AppDelegate.swift */; };
 		A689C6F41E5E37460006FC72 /* ProductGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689C6F31E5E37460006FC72 /* ProductGridViewController.swift */; };
 		A689C6F71E5E37460006FC72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A689C6F51E5E37460006FC72 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A604F3FF1E5EDCFB00FA33C2 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		A604F4011E5EDE3100FA33C2 /* ProductCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCellTests.swift; sourceTree = "<group>"; };
 		A689C6EE1E5E37460006FC72 /* JohnLewis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JohnLewis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A689C6F11E5E37460006FC72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A689C6F31E5E37460006FC72 /* ProductGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A604F3FE1E5EDCD900FA33C2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A604F3FF1E5EDCFB00FA33C2 /* ProductCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A689C6E51E5E37450006FC72 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 				A689C7081E5E37460006FC72 /* Info.plist */,
 				A689C7231E5E51390006FC72 /* ProductGridViewControllerTests.swift */,
 				A689C72A1E5E63400006FC72 /* ProductGridDatasourceTests.swift */,
+				A604F4011E5EDE3100FA33C2 /* ProductCellTests.swift */,
 			);
 			path = JohnLewisTests;
 			sourceTree = "<group>";
@@ -161,6 +174,7 @@
 		A689C7291E5E557B0006FC72 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A604F3FE1E5EDCD900FA33C2 /* Cell */,
 				A689C72C1E5E64330006FC72 /* DataManager */,
 				A689C6F31E5E37460006FC72 /* ProductGridViewController.swift */,
 			);
@@ -287,6 +301,7 @@
 				A689C72E1E5E644C0006FC72 /* ProductGridDataSource.swift in Sources */,
 				A689C7271E5E54670006FC72 /* NetworkProtocol.swift in Sources */,
 				A689C71C1E5E48640006FC72 /* ProductSimpleContainer.swift in Sources */,
+				A604F4001E5EDCFB00FA33C2 /* ProductCell.swift in Sources */,
 				A689C6F41E5E37460006FC72 /* ProductGridViewController.swift in Sources */,
 				A689C6F21E5E37460006FC72 /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +314,7 @@
 				A689C72B1E5E63400006FC72 /* ProductGridDatasourceTests.swift in Sources */,
 				A689C7241E5E51390006FC72 /* ProductGridViewControllerTests.swift in Sources */,
 				A689C7071E5E37460006FC72 /* ProductSimpleTests.swift in Sources */,
+				A604F4021E5EDE3100FA33C2 /* ProductCellTests.swift in Sources */,
 				A689C7181E5E42CD0006FC72 /* ProductSimpleContainerTests.swift in Sources */,
 				A689C7221E5E506E0006FC72 /* NetworkMock.swift in Sources */,
 			);
@@ -502,6 +518,7 @@
 				A689C70D1E5E37460006FC72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A689C70E1E5E37460006FC72 /* Build configuration list for PBXNativeTarget "JohnLewisTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +527,7 @@
 				A689C7101E5E37460006FC72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

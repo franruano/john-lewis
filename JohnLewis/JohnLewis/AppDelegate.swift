@@ -1,4 +1,5 @@
-//
+
+var dataSource: ProductGridDataSource?//
 //  AppDelegate.swift
 //  JohnLewis
 //

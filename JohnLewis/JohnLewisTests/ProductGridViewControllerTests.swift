@@ -37,5 +37,15 @@ class ProductGridViewControllerTests: XCTestCase {
         XCTAssertEqual(vc?.title, "dishwasher(\(vc?.productContainer?.results))", "Controller title doesn't match")
     }
 
-    
+    func testSetData() {
+        vc?.network = network
+        vc?.viewDidLoad()
+        vc?.viewWillAppear(false)
+        let _ = vc?.view
+        guard let cell = vc?.collectionView.cellForItem(at: IndexPath(row: 0, section: 0)) as? ProductCell else {
+            XCTFail("Wrong Cell")
+            return
+        }
+        XCTAssertEqual(cell.lblTitle.text, vc?.productContainer?.products[0].title, "Title doesn't much for cell")
+    }
 }
